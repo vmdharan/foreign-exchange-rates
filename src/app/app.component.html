@@ -1,0 +1,44 @@
+<h1>{{title}}</h1>
+
+<table>
+  <thead>
+    <th>Currency</th>
+    <th>Rate</th>
+  </thead>
+  <tbody>
+    <ng-container *ngIf="currencyList?.rates">
+      <tr>
+        <td>USD</td>
+        <td>{{currencyList.rates.USD}}</td>
+      </tr>
+      <tr>
+        <td>AUD</td>
+        <td>{{currencyList.rates.AUD}}</td>
+      </tr>
+      <tr>
+        <td>NZD</td>
+        <td>{{currencyList.rates.NZD}}</td>
+      </tr>
+      <tr>
+        <td>GBP</td>
+        <td>{{currencyList.rates.GBP}}</td>
+      </tr>
+      <tr>
+        <td>EUR</td>
+        <td>{{currencyList.rates.EUR}}</td>
+      </tr>
+      <tr>
+        <td>CNY</td>
+        <td>{{currencyList.rates.CNY}}</td>
+      </tr>
+      <tr>
+        <td>JPY</td>
+        <td>{{currencyList.rates.JPY}}</td>
+      </tr>
+      <tr>
+        <td>HKD</td>
+        <td>{{currencyList.rates.HKD}}</td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
