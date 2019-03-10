@@ -23,7 +23,6 @@ export class AppComponent {
   ngOnInit() {
     this.getRates().subscribe(r => {
       if(r) {
-        console.log(r);
         this.currencyList = r;
       }
     });

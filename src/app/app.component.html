@@ -1,5 +1,9 @@
 <h1>{{title}}</h1>
 
+<div style="margin-bottom: 24px;">
+Exchange Rates for various currencies using {{currencyList?.base}} as base.
+</div>
+
 <table>
   <thead>
     <th>Currency</th>
@@ -42,3 +46,6 @@
     </ng-container>
   </tbody>
 </table>
+
+<br />
+Last Updated: {{currencyList?.date}}
